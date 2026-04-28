@@ -40,11 +40,6 @@ By using this code, you agree that you are solely responsible for your actions.
 ## Requirements
 - Python 3.x
 
-Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
 ## How It Works
 
 Communication Protocol
@@ -94,8 +89,11 @@ python client.py
 Use commands in the server terminal:
 
 >> exec whoami
+
 >> upload test.txt /tmp/test.txt
+
 >> download /tmp/test.txt downloaded.txt
+
 ⚠️ Security Limitations
 
 This project is intentionally minimal and not secure:
