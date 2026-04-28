@@ -31,9 +31,10 @@ By using this code, you agree that you are solely responsible for your actions.
 ## Project Structure
 
 ├── client.py
+
 ├── server.py
+
 ├── README.md
-└── requirements.txt
 
 
 ## Requirements
@@ -44,40 +45,40 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-##How It Works
+## How It Works
 
 Communication Protocol
 Messages are sent with a 4-byte big-endian length prefix
 Ensures reliable transmission of commands and file data
 
-##Commands
-###1. Execute Command
+## Commands
+### 1. Execute Command
 ```bash
 exec <command>
 ```
 Runs a system command on the client and returns output.
 
-###2. Download File (Client → Server)
+### 2. Download File (Client → Server)
 ```bash
 download <remote_path> <local_path>
 ```
 Retrieves file from client machine
 Saves it on server machine
 
-###3. Upload File (Server → Client)
+### 3. Upload File (Server → Client)
 ```bash
 upload <local_path> <remote_path>
 ```
 Sends file from server to client
 Saves it on client machine
 
-###4. Exit
+### 4. Exit
 ```bash
 exit
 ```
 Closes the connection
 
-##Usage
+## Usage
 1. Start Server
 python server.py
 2. Configure Client
